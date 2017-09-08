@@ -1,0 +1,6 @@
+SELECT versao_indicador_variavel_medicao.nr_medicao, id_versao_indicador_variavel, nm_letra, nm_versao_indicador, nr_periodo 
+FROM versao_indicador
+INNER JOIN versao_indicador_variavel USING (id_versao_indicador)
+INNER JOIN versao_indicador_variavel_medicao USING (id_versao_indicador_variavel)
+WHERE id_indicador =134 AND id_versao_indicador_variavel IN (201)
+ORDER BY nr_periodo DESC;

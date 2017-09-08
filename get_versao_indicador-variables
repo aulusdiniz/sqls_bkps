@@ -1,4 +1,4 @@
-SELECT id_indicador, id_versao_indicador_variavel, nm_versao_indicador, nm_letra, nr_periodo, versao_indicador_variavel_medicao.nr_medicao 
+SELECT id_indicador, id_versao_indicador_variavel, nm_letra, versao_indicador_variavel_medicao.nr_medicao, nr_periodo, nm_versao_indicador 
 FROM versao_indicador
 INNER JOIN versao_indicador_variavel USING (id_versao_indicador)
 INNER JOIN versao_indicador_variavel_medicao USING (id_versao_indicador_variavel)
